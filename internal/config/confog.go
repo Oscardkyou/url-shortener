@@ -8,3 +8,11 @@ type Config struct {
 		Port   string
 	}
 }
+
+var instance *Config 
+var once sync.Once 
+
+func GetConfig() *Config 
+	once sync.Once 
+
+func 

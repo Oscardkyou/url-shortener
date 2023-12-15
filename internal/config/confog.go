@@ -1,5 +1,7 @@
 package config
 
+import "sync"
+
 type Config struct {
 	IsDebug *bool
 	Listen  struct {
@@ -9,10 +11,5 @@ type Config struct {
 	}
 }
 
-var instance *Config 
-var once sync.Once 
-
-func GetConfig() *Config 
-	once sync.Once 
-
-func 
+var instance *Config
+var once sync.Once

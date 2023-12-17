@@ -7,7 +7,7 @@ import (
 )
 
 type StorageInterface interface {
-	Save(originalURL, shortKey string) error
+	Save(originalURL string, shortKey string,) error
 }
 
 type URLShortener struct {

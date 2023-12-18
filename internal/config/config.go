@@ -6,6 +6,7 @@ type SessionConfig struct {
 	BlockKey string `json:"block_key"`
 }
 
+
 // Config application configuration structure
 type Config struct {
 	AppPort         int           `json:"app_port"`

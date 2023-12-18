@@ -11,15 +11,11 @@ type StorageInterface interface {
 }
 
 type URLShortener struct {
-	urls    map[string]string
-	db      *sql.DB
-	redis   *redis.Client
 	storage StorageInterface
 }
 
 func NewURLShortener(storage StorageInterface) *URLShortener {
 	return &URLShortener{
-		urls:    make(map[string]string),
 		storage: storage,
 	}
 }

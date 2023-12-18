@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
+	shortener
+
 	model := &URLShortener{
 		urls: make(map[string]string),
 	}
